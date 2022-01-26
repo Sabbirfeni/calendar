@@ -1,0 +1,138 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    display: inline-block;
+    margin: 5px 5px 0 0;
+    padding: 10px 30px;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    background: #5185a8;
+    color: #fff;
+    text-decoration: none;
+    font-family: arial, verdana, sans-serif;
+    font-size: 14px;
+    font-weight: 100;
+}
+
+input {
+    width: 100%;
+    margin: 0 0 5px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 0;
+    font-family: arial, verdana, sans-serif;
+    font-size: 14px;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+}
+
+.mbsc-page {
+   width: 500px;
+}
+.calender-contaoner {
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.demo-week-view {
+    margin-top: 200px;
+}
+.mbsc-calendar-title-wrapper  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #007aff;
+}
+/* Slider right and left button */
+.mbsc-calendar-button-prev {
+    position: absolute;
+    top: 45px;
+    left: -10px;
+    background-color: #ffffff;
+    box-shadow: 1px 1px 5px #0000003a;
+}
+.mbsc-calendar-button-next {
+    position: absolute;
+    top: 45px;
+    right: -10px;
+    background-color: #ffffff;
+    box-shadow: 1px 1px 5px #0000003a;
+}
+.mbsc-calendar-cell-text {
+    font-weight: 500;
+}
+.calender-contaoner h5 {
+    font-weight: bold;
+}
+.time-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.time {
+    width: 120px;
+    height: 45px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+.active, .time:hover {
+    background-color: #007aff;
+    color: white;
+    box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.25);
+}
+ /* .btn:hover {
+    background-color: #666;
+    color: white;
+  } */
+.mbsc-calendar-controls {
+    z-index: -1;
+}
+/* .mbsc-calendar-slide {
+    padding: 0px 0px;
+    border: 1px solid black;
+} */
+.mbsc-calendar-scroll-wrapper {
+    margin: auto 2rem;
+}
+.mbsc-calendar-week-day {
+    background-color: #f7f7f7;
+    padding: 10px;
+    /* border: 1px solid black; */
+}
+.mbsc-calendar-cell-inner {
+    background-color: #fff;
+}
+p, select {
+    color: #8d8c8c;
+    font-weight: 450;
+}
+
+
+@media only screen and (max-width: 600px) {
+    
+    .demo-week-view {
+        margin-top: 40px;
+    }
+    .mbsc-calendar-scroll-wrapper {
+        margin: auto 0rem;
+    }
+    .mbsc-calendar-button-next, .mbsc-calendar-button-prev {
+        display: none;
+    }
+    p, select {
+        font-size: 12px;
+    }
+}
