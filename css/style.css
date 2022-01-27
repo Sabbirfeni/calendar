@@ -33,13 +33,14 @@ input {
 .mbsc-page {
    width: 500px;
 }
-.calender-contaoner {
+.calender-container {
     width: 100%;
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
 .demo-week-view {
     margin-top: 200px;
 }
@@ -67,9 +68,9 @@ input {
 .mbsc-calendar-cell-text {
     font-weight: 500;
 }
-.calender-contaoner h5 {
+.calender-container h5 {
     font-weight: bold;
-}
+} 
 .time-container {
     display: flex;
     flex-wrap: wrap;
@@ -107,19 +108,25 @@ input {
 .mbsc-calendar-scroll-wrapper {
     margin: auto 2rem;
 }
+.mbsc-calendar-row {
+    background-color: white;
+}
 .mbsc-calendar-week-day {
     background-color: #f7f7f7;
     padding: 10px;
     /* border: 1px solid black; */
 }
 .mbsc-calendar-cell-inner {
-    background-color: #fff;
+    background-color: #ffffff;
 }
+
 p, select {
     color: #8d8c8c;
     font-weight: 450;
 }
-
+.time-container a:hover {
+    text-decoration: none;
+}
 
 @media only screen and (max-width: 600px) {
     
