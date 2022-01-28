@@ -11,7 +11,7 @@
 
     <script>
         // Ignore this in your implementation
-        window.isMbscDemo = true;
+    
     </script>
 
     <title>Date Picker</title>
@@ -21,7 +21,9 @@
     <script src="js/mobiscroll.javascript.min.js"></script>
     <link rel="stylesheet" href="css/style.css">
     <style type="text/css">
-    
+    .mbsc-calendar-year-inner {
+        display: block;
+    }
     </style>
 
 </head>
@@ -80,7 +82,8 @@
         controls: ['calendar'],       // More info about controls: https://docs.mobiscroll.com/5-13-4/javascript/calendar#opt-controls
         display: 'inline',            // Specify display mode like: display: 'bottom' or omit setting to use default
         calendarType: 'week',
-        calendarSize: 1
+        calendarSize: 1,
+        
     });
 
 

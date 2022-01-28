@@ -77,6 +77,18 @@ input {
     align-items: center;
     justify-content: center;
 }
+.mbsc-calendar-year > .mbsc-calendar-year-inner {
+    display: block;
+}
+.mbsc-calendar-year > div {
+    display: none;
+}
+.mbsc-calendar-month > .mbsc-calendar-month-inner {
+    display: block;
+}
+.mbsc-calendar-month > div {
+    display: none;
+}
 .time {
     width: 120px;
     height: 45px;
